@@ -1,0 +1,4 @@
+audit-services_*.linux64
+audit-services_*.osx
+audit-services_*.win64
+.idea/*

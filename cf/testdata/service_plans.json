@@ -1,0 +1,119 @@
+{
+   "total_results": 3,
+   "total_pages": 1,
+   "prev_url": null,
+   "next_url": null,
+   "resources": [
+      {
+         "metadata": {
+            "guid": "19337adc-1fe5-4be6-843a-6e1205aabe8b",
+            "url": "/v2/service_plans/19337adc-1fe5-4be6-843a-6e1205aabe8b",
+            "created_at": "2018-05-10T17:49:10Z",
+            "updated_at": "2019-05-07T21:24:40Z"
+         },
+         "entity": {
+            "name": "extra-small",
+            "free": true,
+            "description": "Locator VM: 2CPU, 4GB RAM, 8GB Disk\r\nServer VM: 2CPU, 4GB RAM, 8GB Disk",
+            "service_guid": "22f561de-552c-4f65-869f-6f37f23f37b7",
+            "extra": "{\n  \"bullets\": [\n    \"Locator VM: 2CPU, 4GB RAM, 8GB Disk\\r\\nServer VM: 2CPU, 4GB RAM, 8GB Disk\"\n  ],\n  \"displayName\": \"extra-small\"\n}",
+            "unique_id": "8b4d5f78-6719-4ccc-8b70-59bd396c0991",
+            "public": true,
+            "bindable": true,
+            "plan_updateable": null,
+            "active": true,
+            "service_url": "/v2/services/22f561de-552c-4f65-869f-6f37f23f37b7",
+            "service_instances_url": "/v2/service_plans/19337adc-1fe5-4be6-843a-6e1205aabe8b/service_instances",
+            "schemas": {
+               "service_instance": {
+                  "create": {
+                     "parameters": {}
+                  },
+                  "update": {
+                     "parameters": {}
+                  }
+               },
+               "service_binding": {
+                  "create": {
+                     "parameters": {}
+                  }
+               }
+            }
+         }
+      },
+      {
+         "metadata": {
+            "guid": "bf42aec9-b5f8-4da8-a925-6278c5b363bc",
+            "url": "/v2/service_plans/bf42aec9-b5f8-4da8-a925-6278c5b363bc",
+            "created_at": "2018-05-10T17:49:10Z",
+            "updated_at": "2019-05-07T21:24:40Z"
+         },
+         "entity": {
+            "name": "dev-plan",
+            "free": true,
+            "description": ".",
+            "service_guid": "22f561de-552c-4f65-869f-6f37f23f37b7",
+            "extra": "{\n  \"bullets\": [\n    \".\"\n  ],\n  \"displayName\": \"dev-plan\"\n}",
+            "unique_id": "a74e9b33-3a95-4f0f-820f-12cf3cea00de",
+            "public": true,
+            "bindable": true,
+            "plan_updateable": null,
+            "active": true,
+            "service_url": "/v2/services/22f561de-552c-4f65-869f-6f37f23f37b7",
+            "service_instances_url": "/v2/service_plans/bf42aec9-b5f8-4da8-a925-6278c5b363bc/service_instances",
+            "schemas": {
+               "service_instance": {
+                  "create": {
+                     "parameters": {}
+                  },
+                  "update": {
+                     "parameters": {}
+                  }
+               },
+               "service_binding": {
+                  "create": {
+                     "parameters": {}
+                  }
+               }
+            }
+         }
+      },
+      {
+         "metadata": {
+            "guid": "38579721-1e1f-46eb-aa94-8b599cf14160",
+            "url": "/v2/service_plans/38579721-1e1f-46eb-aa94-8b599cf14160",
+            "created_at": "2018-12-29T00:02:41Z",
+            "updated_at": "2019-05-07T21:24:40Z"
+         },
+         "entity": {
+            "name": "small-footprint",
+            "free": true,
+            "description": "Locator-Server VM: 1CPU, 8GB RAM, 8GB Disk, 10GB Persistent Disk",
+            "service_guid": "22f561de-552c-4f65-869f-6f37f23f37b7",
+            "extra": "{\n  \"bullets\": [\n    \"Locator-Server VM: 1CPU, 8GB RAM, 8GB Disk, 10GB Persistent Disk\"\n  ],\n  \"displayName\": \"small-footprint\"\n}",
+            "unique_id": "a74e9b33-3a95-4f0f-820f-234fhner23003s",
+            "public": true,
+            "bindable": true,
+            "plan_updateable": null,
+            "active": true,
+            "service_url": "/v2/services/22f561de-552c-4f65-869f-6f37f23f37b7",
+            "service_instances_url": "/v2/service_plans/38579721-1e1f-46eb-aa94-8b599cf14160/service_instances",
+            "schemas": {
+               "service_instance": {
+                  "create": {
+                     "parameters": {}
+                  },
+                  "update": {
+                     "parameters": {}
+                  }
+               },
+               "service_binding": {
+                  "create": {
+                     "parameters": {}
+                  }
+               }
+            }
+         }
+      }
+   ]
+}

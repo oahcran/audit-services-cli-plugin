@@ -1,0 +1,414 @@
+{
+   "guid": "01b830f3-eaa2-42b1-8547-14af266a20b8",
+   "name": "development",
+   "apps": [
+      {
+         "guid": "a5c2eda0-35ac-424f-902d-5fdd853a7f50",
+         "urls": [
+            "cf-redis-commander1.apps.cfexample.com"
+         ],
+         "routes": [
+            {
+               "guid": "8cf6b95e-778b-44ba-ba08-f0be9919e1b5",
+               "host": "cf-redis-commander1",
+               "port": null,
+               "path": "",
+               "domain": {
+                  "guid": "f5e568ca-4905-4b83-9423-ca5749decc38",
+                  "name": "apps.cfexample.com"
+               }
+            }
+         ],
+         "service_count": 1,
+         "service_names": [
+            "svc-redis"
+         ],
+         "running_instances": 1,
+         "name": "cf-redis-commander",
+         "production": false,
+         "space_guid": "01b830f3-eaa2-42b1-8547-14af266a20b8",
+         "stack_guid": "b27885d5-fa54-4900-a95e-449a2aead444",
+         "buildpack": null,
+         "detected_buildpack": "node.js 1.6.49 (no decorators apply)",
+         "detected_buildpack_guid": "030c560a-081d-4ee6-91b0-bbbea4af9c81",
+         "environment_json": {},
+         "memory": 256,
+         "instances": 1,
+         "disk_quota": 1024,
+         "state": "STARTED",
+         "version": "a2491ee9-30f8-4288-84c3-ff3ec9b898ed",
+         "command": null,
+         "console": false,
+         "debug": null,
+         "staging_task_id": "67b908c4-9f73-4af9-9068-bc7d2a70cfae",
+         "package_state": "STAGED",
+         "health_check_type": "port",
+         "health_check_timeout": null,
+         "health_check_http_endpoint": null,
+         "staging_failed_reason": null,
+         "staging_failed_description": null,
+         "diego": true,
+         "docker_image": null,
+         "package_updated_at": "2019-06-03T02:45:21Z",
+         "detected_start_command": "npm start",
+         "enable_ssh": true,
+         "ports": null
+      },
+      {
+         "guid": "cb60b144-fd5e-40d9-89d9-5de21550944d",
+         "urls": [
+            "demo-cook.apps.cfexample.com"
+         ],
+         "routes": [
+            {
+               "guid": "49039db1-388d-4b47-834e-30a485d393d1",
+               "host": "demo-cook",
+               "port": null,
+               "path": "",
+               "domain": {
+                  "guid": "f5e568ca-4905-4b83-9423-ca5749decc38",
+                  "name": "apps.cfexample.com"
+               }
+            }
+         ],
+         "service_count": 1,
+         "service_names": [
+            "config-server"
+         ],
+         "running_instances": 1,
+         "name": "demo-cook",
+         "production": false,
+         "space_guid": "01b830f3-eaa2-42b1-8547-14af266a20b8",
+         "stack_guid": "b27885d5-fa54-4900-a95e-449a2aead444",
+         "buildpack": null,
+         "detected_buildpack": "client-certificate-mapper=1.8.0_RELEASE container-security-provider=1.16.0_RELEASE java-buildpack=\u001B[34mv4.18\u001B[0m-offline-https://github.com/cloudfoundry/java-buildpack.git#a0df7d0 java-main java-opts java-security jvmkill-agent=1.... (no decorators apply)",
+         "detected_buildpack_guid": "030c560a-081d-4ee6-91b0-bbbea4af9c81",
+         "environment_json": {},
+         "memory": 1024,
+         "instances": 1,
+         "disk_quota": 1024,
+         "state": "STARTED",
+         "version": "d763b02e-7ef0-4f23-8e88-a6acd27eef4e",
+         "command": null,
+         "console": false,
+         "debug": null,
+         "staging_task_id": "80350541-b04b-4510-94e9-548543efaede",
+         "package_state": "STAGED",
+         "health_check_type": "port",
+         "health_check_timeout": null,
+         "health_check_http_endpoint": "",
+         "staging_failed_reason": null,
+         "staging_failed_description": null,
+         "diego": true,
+         "docker_image": null,
+         "package_updated_at": "2019-05-19T03:51:24Z",
+         "detected_start_command": "JAVA_OPTS=\"-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.16.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR -XX:ActiveProcessorCount=$(nproc) -Djava.ext.dirs=$PWD/.java-buildpack/container_security_provider:$PWD/.java-buildpack/open_jdk_jre/lib/ext -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS\" && CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.13.0_RELEASE -totMemory=$MEMORY_LIMIT -loadedClasses=17580 -poolType=metaspace -stackThreads=250 -vmOptions=\"$JAVA_OPTS\") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS=\"$JAVA_OPTS $CALCULATED_MEMORY\" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher",
+         "enable_ssh": true,
+         "ports": null
+      },
+      {
+         "guid": "9268ad5a-8505-4e24-a143-ab7d4e8d7d86",
+         "urls": [
+            "gotty-redis-cli.apps.cfexample.com"
+         ],
+         "routes": [
+            {
+               "guid": "8351371b-4a4a-43e0-b759-ca7c7840babf",
+               "host": "gotty-redis-cli",
+               "port": null,
+               "path": "",
+               "domain": {
+                  "guid": "f5e568ca-4905-4b83-9423-ca5749decc38",
+                  "name": "apps.cfexample.com"
+               }
+            }
+         ],
+         "service_count": 1,
+         "service_names": [
+            "svc-redis"
+         ],
+         "running_instances": 1,
+         "name": "gotty-redis-cli",
+         "production": false,
+         "space_guid": "01b830f3-eaa2-42b1-8547-14af266a20b8",
+         "stack_guid": "b27885d5-fa54-4900-a95e-449a2aead444",
+         "buildpack": "binary_buildpack",
+         "detected_buildpack": "binary",
+         "detected_buildpack_guid": "7c771368-b21e-45e5-8f51-b759b77e8a6a",
+         "environment_json": {
+            "GOTTY_PASSWORD": "gotty",
+            "GOTTY_USERNAME": "user"
+         },
+         "memory": 128,
+         "instances": 1,
+         "disk_quota": 1024,
+         "state": "STARTED",
+         "version": "8d77f306-3d05-4075-a65a-ac301e029afa",
+         "command": null,
+         "console": false,
+         "debug": null,
+         "staging_task_id": "3645f592-460e-4321-9dc0-371ac9c1ce97",
+         "package_state": "STAGED",
+         "health_check_type": "port",
+         "health_check_timeout": null,
+         "health_check_http_endpoint": null,
+         "staging_failed_reason": null,
+         "staging_failed_description": null,
+         "diego": true,
+         "docker_image": null,
+         "package_updated_at": "2019-06-03T15:53:07Z",
+         "detected_start_command": "$HOME/gotty -p \"$PORT\" -w -c \"$GOTTY_USERNAME:$GOTTY_PASSWORD\" /bin/bash",
+         "enable_ssh": true,
+         "ports": null
+      },
+      {
+         "guid": "bd465ca9-2e5d-42e0-8c9e-9ba69e688b48",
+         "urls": [
+            "gowebapp.apps.cfexample.com"
+         ],
+         "routes": [
+            {
+               "guid": "b56af9ce-2488-4786-9b68-228233dd2e28",
+               "host": "gowebapp",
+               "port": null,
+               "path": "",
+               "domain": {
+                  "guid": "f5e568ca-4905-4b83-9423-ca5749decc38",
+                  "name": "apps.cfexample.com"
+               }
+            }
+         ],
+         "service_count": 0,
+         "service_names": [],
+         "running_instances": 1,
+         "name": "gowebapp",
+         "production": false,
+         "space_guid": "01b830f3-eaa2-42b1-8547-14af266a20b8",
+         "stack_guid": "b27885d5-fa54-4900-a95e-449a2aead444",
+         "buildpack": "binary_buildpack",
+         "detected_buildpack": "binary",
+         "detected_buildpack_guid": "7c771368-b21e-45e5-8f51-b759b77e8a6a",
+         "environment_json": {},
+         "memory": 128,
+         "instances": 1,
+         "disk_quota": 1024,
+         "state": "STARTED",
+         "version": "59065024-6962-47ef-91f0-1989fe30775d",
+         "command": null,
+         "console": false,
+         "debug": null,
+         "staging_task_id": "d6b445c7-9aea-4970-afcb-14aa8b45ecd7",
+         "package_state": "STAGED",
+         "health_check_type": "port",
+         "health_check_timeout": null,
+         "health_check_http_endpoint": null,
+         "staging_failed_reason": null,
+         "staging_failed_description": null,
+         "diego": true,
+         "docker_image": null,
+         "package_updated_at": "2019-05-03T22:09:14Z",
+         "detected_start_command": "$HOME/gowebapp",
+         "enable_ssh": true,
+         "ports": null
+      },
+      {
+         "guid": "5304b5ad-6ef7-4688-8428-5a53b7ed2c87",
+         "urls": [
+            "hello-boot-app-nice-hedgehog.apps.cfexample.com"
+         ],
+         "routes": [
+            {
+               "guid": "4fea58ed-9e57-45f1-af00-9d9d9a66d31e",
+               "host": "hello-boot-app-nice-hedgehog",
+               "port": null,
+               "path": "",
+               "domain": {
+                  "guid": "f5e568ca-4905-4b83-9423-ca5749decc38",
+                  "name": "apps.cfexample.com"
+               }
+            }
+         ],
+         "service_count": 2,
+         "service_names": [
+            "rabbitmq-service",
+            "svc-autoscaler"
+         ],
+         "running_instances": 2,
+         "name": "hello-boot-app",
+         "production": false,
+         "space_guid": "01b830f3-eaa2-42b1-8547-14af266a20b8",
+         "stack_guid": "b27885d5-fa54-4900-a95e-449a2aead444",
+         "buildpack": "java_buildpack_offline",
+         "detected_buildpack": "",
+         "detected_buildpack_guid": "bd44ef42-9397-4517-8d04-c7230665d119",
+         "environment_json": {},
+         "memory": 1024,
+         "instances": 2,
+         "disk_quota": 1024,
+         "state": "STARTED",
+         "version": "c5ba899c-e2c8-4f7f-a888-bb6574c4bb94",
+         "command": null,
+         "console": false,
+         "debug": null,
+         "staging_task_id": "9f70d0ef-06c7-4ac3-a8fa-3b9323020483",
+         "package_state": "STAGED",
+         "health_check_type": "http",
+         "health_check_timeout": 300,
+         "health_check_http_endpoint": "/health",
+         "staging_failed_reason": null,
+         "staging_failed_description": null,
+         "diego": true,
+         "docker_image": null,
+         "package_updated_at": "2019-04-05T21:36:32Z",
+         "detected_start_command": "JAVA_OPTS=\"-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.16.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR -Djava.ext.dirs=$PWD/.java-buildpack/container_security_provider:$PWD/.java-buildpack/open_jdk_jre/lib/ext -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS\" && CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.13.0_RELEASE -totMemory=$MEMORY_LIMIT -loadedClasses=14119 -poolType=metaspace -stackThreads=250 -vmOptions=\"$JAVA_OPTS\") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS=\"$JAVA_OPTS $CALCULATED_MEMORY\" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher",
+         "enable_ssh": true,
+         "ports": null
+      }
+   ],
+   "services": [
+      {
+         "guid": "fd8fa63b-7272-4cbc-ad72-ad098ba125c0",
+         "name": "config-server",
+         "bound_app_count": 1,
+         "last_operation": {
+            "type": "create",
+            "state": "succeeded",
+            "description": "",
+            "updated_at": "2019-05-17T16:35:16Z",
+            "created_at": "2019-05-17T16:33:15Z"
+         },
+         "dashboard_url": "https://spring-cloud-broker.apps.cfexample.com/dashboard/p-config-server/fd8fa63b-7272-4cbc-ad72-ad098ba125c0",
+         "shared_from": null,
+         "shared_to": [],
+         "service_plan": {
+            "guid": "6f244eda-0b20-4c34-83b8-2a91ce1facd0",
+            "name": "standard",
+            "service": {
+               "guid": "2991d5fc-9739-47d9-a931-d98eb1e45929",
+               "label": "p-config-server",
+               "provider": null,
+               "version": null
+            }
+         }
+      },
+      {
+         "guid": "a9caa104-92d7-43f7-9657-9b62baa7b589",
+         "name": "metrics-forwarder",
+         "bound_app_count": 0,
+         "last_operation": null,
+         "dashboard_url": null,
+         "shared_from": null,
+         "shared_to": [],
+         "service_plan": {
+            "guid": "f809c4a9-e318-46e5-9a87-0a40fec9c4a0",
+            "name": "unlimited",
+            "service": {
+               "guid": "46d93cdc-b820-4a0b-a341-52a2f9c480ab",
+               "label": "metrics-forwarder",
+               "provider": null,
+               "version": null
+            }
+         }
+      },
+      {
+         "guid": "60f8edf8-001d-4938-84ce-8aa0d443073d",
+         "name": "rabbitmq-service",
+         "bound_app_count": 1,
+         "last_operation": {
+            "type": "create",
+            "state": "succeeded",
+            "description": "",
+            "updated_at": "2019-04-17T17:28:45Z",
+            "created_at": "2019-04-17T17:28:45Z"
+         },
+         "dashboard_url": "https://pivotal-rabbitmq.run.cfexample.com/#/login/",
+         "shared_from": null,
+         "shared_to": [],
+         "service_plan": {
+            "guid": "a359595b-7904-4588-945f-f413b15a3e34",
+            "name": "standard",
+            "service": {
+               "guid": "b222bc24-31ee-49e4-949d-49c80b705205",
+               "label": "p-rabbitmq",
+               "provider": null,
+               "version": null
+            }
+         }
+      },
+      {
+         "guid": "acb8ce1a-f2f1-4116-b7b3-c8c919adfe9f",
+         "name": "service-config",
+         "bound_app_count": 0,
+         "last_operation": {
+            "type": "create",
+            "state": "succeeded",
+            "description": "",
+            "updated_at": "2019-05-17T04:52:40Z",
+            "created_at": "2019-05-17T04:50:39Z"
+         },
+         "dashboard_url": "https://spring-cloud-broker.apps.cfexample.com/dashboard/p-config-server/acb8ce1a-f2f1-4116-b7b3-c8c919adfe9f",
+         "shared_from": null,
+         "shared_to": [],
+         "service_plan": {
+            "guid": "6f244eda-0b20-4c34-83b8-2a91ce1facd0",
+            "name": "standard",
+            "service": {
+               "guid": "2991d5fc-9739-47d9-a931-d98eb1e45929",
+               "label": "p-config-server",
+               "provider": null,
+               "version": null
+            }
+         }
+      },
+      {
+         "guid": "afa00d7f-0849-4c31-89c5-27472359c2c3",
+         "name": "svc-autoscaler",
+         "bound_app_count": 1,
+         "last_operation": {
+            "type": "create",
+            "state": "succeeded",
+            "description": "",
+            "updated_at": "2019-05-11T16:35:17Z",
+            "created_at": "2019-05-11T16:35:17Z"
+         },
+         "dashboard_url": null,
+         "shared_from": null,
+         "shared_to": [],
+         "service_plan": {
+            "guid": "907a84e6-f236-4561-abb4-e8e511f365e2",
+            "name": "standard",
+            "service": {
+               "guid": "9edd3bb8-f12e-44d9-869a-f86972b482cc",
+               "label": "app-autoscaler",
+               "provider": null,
+               "version": null
+            }
+         }
+      },
+      {
+         "guid": "55eece71-9cbc-4dac-94fb-aef574242dbf",
+         "name": "svc-redis",
+         "bound_app_count": 2,
+         "last_operation": {
+            "type": "create",
+            "state": "succeeded",
+            "description": "Instance provisioning completed",
+            "updated_at": "2019-06-03T02:34:18Z",
+            "created_at": "2019-06-03T02:30:12Z"
+         },
+         "dashboard_url": null,
+         "shared_from": null,
+         "shared_to": [],
+         "service_plan": {
+            "guid": "7e867d4b-c555-4711-8ce6-b047e30f6a79",
+            "name": "cache-small",
+            "service": {
+               "guid": "640ebb0d-0063-41b0-849e-c066ef42051b",
+               "label": "p.redis",
+               "provider": null,
+               "version": null
+            }
+         }
+      }
+   ]
+}
